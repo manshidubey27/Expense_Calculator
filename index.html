@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h2>Expense Calculator</h2>
+        <input type="text" id="expenseName" placeholder="Expense Name" /><br><br>
+        <input type="number" id="expenseAmount" placeholder="Expense Amount" /><br><br>
+        <button onclick = "addExpense()">Add Expense</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id = "expenseTable"></tbody>
+        </table>
+
+        <h3>Total: $<span id = "totalAmount">0.00</span></h3>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
